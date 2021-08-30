@@ -40,6 +40,7 @@ a {
     puede alterar elementos no deseados*/
 }
 
+/* Primer pseudo-clase*/
 a:hover {
     background-color: white;
 }
@@ -74,6 +75,36 @@ ul, h2 {
 body > header > i.fas.fa-car {
     scale: 120;
 }
+
+
+tr:nth-child(odd) > td {
+    padding-top: 50px;
+}
+
+/***************************************************/
+/*   Estilo del componente Musica Boton -          */
+/***************************************************/
+@keyframes cambiarColor {
+    from { background-color: red;}
+    to { background-color: yellow;}
+}
+
+.musicButton {
+    border-color: red;
+    /* Tuve que sobrescribir el estilo de a por mi class*/
+    border-style: none;
+    border-width: 2px;
+    /*transition: ease-out;
+    transition-duration: 5s;*/
+    animation-name: cambiarColor;
+    animation-duration: 5s;
+}
+
+.musicButton:hover {
+    background-color: red;
+    box-shadow: chartreuse;
+}
+
 
 /***************************************************/
 /*   Estilo del componente boton - fondo blanco   */
